@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Trøndelag Ruteplanlegger">
+  <rect width="512" height="512" rx="96" fill="#1f3a5f"/>
+  <path d="M144 368c0-80 224-64 224-160 0-40-32-64-72-64-56 0-72 64-72 64" fill="none" stroke="#f7f8fa" stroke-width="40" stroke-linecap="round"/>
+  <circle cx="144" cy="368" r="40" fill="#86c5ff"/>
+  <circle cx="224" cy="208" r="40" fill="#f0d98c"/>
+  <path d="M304 104c-48 0-88 40-88 88 0 64 88 160 88 160s88-96 88-160c0-48-40-88-88-88Z" fill="#ffffff"/>
+  <circle cx="304" cy="192" r="32" fill="#1f3a5f"/>
+</svg>

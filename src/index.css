@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: #f7f9fc;
+    color: #1f2f55;
+  }
+}
+
+@layer components {
+  .case-card {
+    overflow: hidden;
+    border: 1px solid #dce3ee;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 12px 24px rgb(31 47 85 / 12%);
+  }
+
+  .case-card-body {
+    padding: 16px 26px 0;
+  }
+
+  .case-rule {
+    border-top: 1px solid #dfe5ef;
+  }
+
+  .case-status-pill {
+    display: inline-flex;
+    min-width: 190px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 6px 18px;
+    color: #ffffff;
+    font-size: 1.12rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 35%);
+    box-shadow:
+      inset 0 2px 0 rgb(255 255 255 / 45%),
+      inset 0 -3px 0 rgb(0 0 0 / 12%),
+      0 4px 12px rgb(31 47 85 / 16%);
+  }
+
+  .case-status-blue {
+    background: linear-gradient(180deg, #69c7ff 0%, #1f7be9 100%);
+    outline: 3px solid rgb(82 190 255 / 35%);
+  }
+
+  .case-status-red {
+    background: linear-gradient(180deg, #ff828e 0%, #e43a50 100%);
+    outline: 3px solid rgb(255 119 136 / 35%);
+  }
+
+  .case-status-purple {
+    background: linear-gradient(180deg, #d17cff 0%, #9c3fe0 100%);
+    outline: 3px solid rgb(190 104 255 / 35%);
+  }
+
+  .case-status-green {
+    background: linear-gradient(180deg, #65d96f 0%, #2fa33a 100%);
+    outline: 3px solid rgb(70 200 82 / 35%);
+  }
+
+  .case-status-amber {
+    background: linear-gradient(180deg, #ffd66b 0%, #d98b06 100%);
+    outline: 3px solid rgb(245 180 36 / 35%);
+  }
+
+  .case-action-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    border-top: 1px solid #dfe5ef;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f9fd 100%);
+    padding: 10px 26px 14px;
+  }
+
+  .case-action {
+    min-height: 36px;
+    border-radius: 8px;
+    border: 1px solid #c8d6e2;
+    background: linear-gradient(180deg, #ffffff 0%, #edf7fd 100%);
+    color: #0f67c7;
+    font-weight: 800;
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 80%),
+      0 2px 5px rgb(31 47 85 / 13%);
+  }
+
+  .case-action:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #e2f2fc 100%);
+  }
+
+  .case-action:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+
+  .case-action-red {
+    border-color: #dfc3cb;
+    background: linear-gradient(180deg, #ffffff 0%, #fff4f7 100%);
+    color: #c82848;
+  }
+
+  .case-action-purple {
+    border-color: #dac7ee;
+    color: #8c39d1;
+  }
+
+  .case-action-amber {
+    border-color: #e6d3a9;
+    color: #b36a00;
+  }
+
+  .case-action-blue {
+    color: #0f67c7;
+  }
+
+  .case-field {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid #dfe5ef;
+    color: #1f2f55;
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .case-field-strong {
+    font-weight: 800;
+  }
+
+  .case-icon {
+    width: 20px;
+    flex: 0 0 20px;
+    color: #1479e8;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .case-map-marker {
+    background: transparent;
+    border: 0;
+  }
+
+  .case-map-marker span {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 3px solid #ffffff;
+    border-radius: 9999px;
+    box-shadow: 0 10px 20px rgb(15 23 42 / 25%);
+  }
+
+  .user-map-marker span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #ffffff;
+    border-radius: 9999px;
+    background: #1f7be9;
+    box-shadow:
+      0 0 0 8px rgb(31 123 233 / 18%),
+      0 10px 20px rgb(15 23 42 / 25%);
+  }
+
+  .leaflet-popup-content-wrapper {
+    border-radius: 8px;
+  }
+
+  .leaflet-popup-content {
+    margin: 14px;
+  }
+
+  @media (max-width: 760px) {
+    .case-card-body {
+      padding: 14px 18px 0;
+    }
+
+    .case-action-row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding: 10px 18px 14px;
+    }
+
+    .case-status-pill {
+      min-width: 160px;
+      font-size: 1rem;
+    }
+  }
+}
